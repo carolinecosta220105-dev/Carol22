@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA — Modern Essentials for Everyday Life</title>
+  <meta name="description" content="NOVA is a modern e-commerce store with curated top products: audio, wearables, home and lifestyle essentials." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">◆</span> NOVA
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#features">Why NOVA</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#newsletter">Deals</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="cartBtn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" id="cartCount" hidden>0</span>
+        </button>
+        <a class="btn btn-primary btn-sm nav-cta" href="#products">Shop now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="pill">✦ New season · Free shipping over $50</span>
+          <h1>Top products, <span class="gradient-text">beautifully</span> delivered.</h1>
+          <p>
+            Discover a curated collection of this season's best-selling tech, home and
+            lifestyle essentials — hand-picked, fairly priced and shipped to your door in 48 hours.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#products">Explore top products</a>
+            <a class="btn btn-ghost" href="#features">Why shop with us</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>25k+</strong><span>happy customers</span></li>
+            <li><strong>4.9★</strong><span>average rating</span></li>
+            <li><strong>48h</strong><span>fast delivery</span></li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="hero-card">
+            <div class="hero-card-glow"></div>
+            <div class="hero-product">
+              <span class="hero-product-emoji">🎧</span>
+              <div>
+                <strong>Studio Pro X</strong>
+                <small>Wireless headphones</small>
+              </div>
+            </div>
+            <div class="hero-price">
+              <span class="price-now">$199</span>
+              <span class="price-was">$249</span>
+            </div>
+            <div class="hero-meter"><span></span></div>
+            <p class="hero-meter-label">🔥 32 sold in the last hour</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Free 48h shipping</span><span>·</span><span>30-day returns</span><span>·</span>
+        <span>Secure checkout</span><span>·</span><span>2-year warranty</span><span>·</span>
+        <span>Free 48h shipping</span><span>·</span><span>30-day returns</span><span>·</span>
+        <span>Secure checkout</span><span>·</span><span>2-year warranty</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- ===== Products ===== -->
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Best sellers</span>
+            <h2>This week's top products</h2>
+            <p>The pieces our customers can't stop adding to their carts.</p>
+          </div>
+          <a class="btn btn-ghost btn-sm" href="#products">View all →</a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-media tone-violet"><span>🎧</span><span class="tag">Best seller</span></div>
+            <div class="product-body">
+              <div class="product-rating">★★★★★ <span>(2,314)</span></div>
+              <h3>Studio Pro X</h3>
+              <p class="product-desc">Noise-cancelling wireless headphones with 40h battery.</p>
+              <div class="product-foot">
+                <div class="product-price"><span class="price-now">$199</span><span class="price-was">$249</span></div>
+                <button class="btn btn-primary btn-sm add-to-cart" data-name="Studio Pro X">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-media tone-blue"><span>⌚</span><span class="tag">New</span></div>
+            <div class="product-body">
+              <div class="product-rating">★★★★★ <span>(1,876)</span></div>
+              <h3>Pulse Watch 2</h3>
+              <p class="product-desc">Health tracking, GPS and a 7-day battery in a slim case.</p>
+              <div class="product-foot">
+                <div class="product-price"><span class="price-now">$149</span><span class="price-was">$179</span></div>
+                <button class="btn btn-primary btn-sm add-to-cart" data-name="Pulse Watch 2">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-media tone-amber"><span>📱</span><span class="tag tag-hot">-20%</span></div>
+            <div class="product-body">
+              <div class="product-rating">★★★★☆ <span>(943)</span></div>
+              <h3>Lumi Phone Stand</h3>
+              <p class="product-desc">Adjustable aluminium stand with wireless charging base.</p>
+              <div class="product-foot">
+                <div class="product-price"><span class="price-now">$39</span><span class="price-was">$49</span></div>
+                <button class="btn btn-primary btn-sm add-to-cart" data-name="Lumi Phone Stand">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-media tone-green"><span>🪴</span><span class="tag">Eco</span></div>
+            <div class="product-body">
+              <div class="product-rating">★★★★★ <span>(1,102)</span></div>
+              <h3>Terra Desk Garden</h3>
+              <p class="product-desc">Self-watering mini garden for herbs, on any desk.</p>
+              <div class="product-foot">
+                <div class="product-price"><span class="price-now">$59</span></div>
+                <button class="btn btn-primary btn-sm add-to-cart" data-name="Terra Desk Garden">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-media tone-rose"><span>💡</span><span class="tag">Top rated</span></div>
+            <div class="product-body">
+              <div class="product-rating">★★★★★ <span>(3,057)</span></div>
+              <h3>Halo Smart Lamp</h3>
+              <p class="product-desc">16M colors, sunrise alarm and voice-control ready.</p>
+              <div class="product-foot">
+                <div class="product-price"><span class="price-now">$79</span><span class="price-was">$99</span></div>
+                <button class="btn btn-primary btn-sm add-to-cart" data-name="Halo Smart Lamp">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-media tone-cyan"><span>🎒</span><span class="tag">Staff pick</span></div>
+            <div class="product-body">
+              <div class="product-rating">★★★★☆ <span>(768)</span></div>
+              <h3>Voyager Backpack</h3>
+              <p class="product-desc">Water-resistant 22L pack with a padded laptop sleeve.</p>
+              <div class="product-foot">
+                <div class="product-price"><span class="price-now">$89</span></div>
+                <button class="btn btn-primary btn-sm add-to-cart" data-name="Voyager Backpack">Add to cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Why NOVA</span>
+          <h2>Shopping that feels effortless</h2>
+          <p>Everything you love about great retail, without the friction.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature reveal">
+            <span class="feature-icon">🚚</span>
+            <h3>Free 48h shipping</h3>
+            <p>On every order over $50, delivered by our own courier network.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-icon">↩️</span>
+            <h3>30-day returns</h3>
+            <p>Changed your mind? Send it back free of charge, no questions asked.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-icon">🔒</span>
+            <h3>Secure checkout</h3>
+            <p>256-bit encryption and all major payment methods supported.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-icon">💬</span>
+            <h3>Human support</h3>
+            <p>Real people, 7 days a week, answering in under 2 minutes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Reviews</span>
+          <h2>Loved by 25,000+ customers</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial reveal">
+            <div class="stars">★★★★★</div>
+            <blockquote>“Ordered the Studio Pro X on Monday, wearing it on Wednesday. The quality genuinely surprised me at this price.”</blockquote>
+            <figcaption><span class="avatar av-1" aria-hidden="true">MR</span><div><strong>Maya R.</strong><small>Verified buyer</small></div></figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <div class="stars">★★★★★</div>
+            <blockquote>“The Halo lamp completely changed my evenings. NOVA's support even helped me pick the right size — in minutes.”</blockquote>
+            <figcaption><span class="avatar av-2" aria-hidden="true">JT</span><div><strong>Jonas T.</strong><small>Verified buyer</small></div></figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <div class="stars">★★★★★</div>
+            <blockquote>“Best online shopping experience I've had. Clean site, fast delivery, and returns really are painless.”</blockquote>
+            <figcaption><span class="avatar av-3" aria-hidden="true">AL</span><div><strong>Amira L.</strong><small>Verified buyer</small></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Newsletter ===== -->
+    <section class="section section-tight" id="newsletter">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div>
+            <h2>Get 10% off your first order</h2>
+            <p>Join the NOVA list for early drops, member deals and zero spam.</p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <label class="sr-only" for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <button class="btn btn-dark" type="submit">Claim my 10%</button>
+            <p class="form-msg" id="formMsg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">◆</span> NOVA</a>
+        <p>Modern essentials, curated with care and delivered fast.</p>
+      </div>
+      <nav aria-label="Shop links">
+        <h4>Shop</h4>
+        <a href="#products">Best sellers</a>
+        <a href="#products">New arrivals</a>
+        <a href="#products">Deals</a>
+      </nav>
+      <nav aria-label="Company links">
+        <h4>Company</h4>
+        <a href="#features">About</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#newsletter">Careers</a>
+      </nav>
+      <nav aria-label="Support links">
+        <h4>Support</h4>
+        <a href="#features">Shipping</a>
+        <a href="#features">Returns</a>
+        <a href="#newsletter">Contact</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2025 NOVA Store. All rights reserved.</p>
+      <p>Made with ♥ for great shopping.</p>
+    </div>
+  </footer>
+
+  <!-- Cart toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
